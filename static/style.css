@@ -18,8 +18,12 @@ a:hover {
 
 .content {
     max-width: 800px;
-    margin: 20px auto; /* Add space above content */
+    margin: 20px auto;
     padding: 20px;
+}
+
+p {
+    font-size: 18px;
 }
 
 h2 {
@@ -72,10 +76,36 @@ nav ul li:last-child {
 	font-size: 20px;
 }
 
-.photo {
-    float: left;
+/* About Section */
+
+#about {
+    padding: 20px;
+}
+
+#about .content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+}
+
+#about .photo {
+    flex: 0 0 auto;
     margin-right: 40px;
-    margin-bottom: 40px;
+}
+
+#about .photo img {
+    border-radius: 50%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#about .text {
+    flex: 1;
 }
 
 .services {
