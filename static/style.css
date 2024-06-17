@@ -1,16 +1,18 @@
 body {
-    background-color: #111;
-    color: #fff;
+    background-color: #0c1121;
+    color: #d0d3fc;
     font-family: Arial, sans-serif;
 }
 
 a {
-    color: #17a589;
+    color: #b6b936;
+    font-size: 16px;
+    font-weight: bold;
     text-decoration: none;
 }
 
 a:hover {
-    color: #1abc9c;
+    color: #8e3ba9;
 }
 
 .content {
@@ -19,10 +21,12 @@ a:hover {
     padding: 20px;
 }
 
-.section-title {
+h2 {
     color: #17a589;
     font-size: 24px;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .photo {
