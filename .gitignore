@@ -1,0 +1,27 @@
+# Python virtual environment
+portfolio/venv/
+
+# Environment configuration
+.env
+
+# Temporary files
+*.pyc
+*.pyo
+*~
+
+# Python cache directories
+__pycache__/
+
+# IDE or editor specific files (optional)
+.vscode/
+.idea/
+
+# Dependency management files (if using pipenv, poetry, etc.)
+Pipfile
+Pipfile.lock
+
+# Generated files and directories
+portfolio/__pycache__/
+portfolio/share/
+
+
