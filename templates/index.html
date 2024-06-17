@@ -26,8 +26,9 @@
 
     <section id="home">
         <div class="content">
-            <h1>Hi, I'm Mercy Njuguna, and I'm a Full-Stack Software Engineer.</h1>
-            <p>With expertise in Python (Flask) and JavaScript (React, Express, and Node.js), I specialize in delivering robust, scalable solutions.</p>
+		<h1 class="introheading">Hi, I'm Mercy Njuguna,</h1>
+		<h3>and I'm a Full-Stack Software Engineer.</h3>
+            <p class="introparagraph">With expertise in Python (Flask) and JavaScript (React, Express, and Node.js), I specialize in delivering robust, scalable solutions.</p>
         </div>
     </section>
 
@@ -35,9 +36,13 @@
         <div class="content">
             <h2>About Me</h2>
             <div class="photo">
-                <!-- Insert your photo here if needed -->
+                 <img src="{{ url_for('static', filename='images/profilepic.jpg') }}" alt="Logo">
             </div>
-            <p>I am a certified full-stack software engineer, having completed the ALX Africa 15-month course in March 2024...</p>
+            <p>I am a certified full-stack software engineer, having completed the ALX Africa 15-month course in March 2024.This project-based training equipped me with a robust foundation and essential skills for a successful career in software engineering.</p>
+	    <p>Additionally, I graduated with first-class honors in Bachelor of Business and Information Technology from Jomo Kenyatta University of Agriculture & Technology in 2016. This program provided me with a diverse skill set encompassing business development, marketing, finance, and IT.
+</p>
+	    <p>With over 2 years of professional experience in business development within technology companies, I transitioned into software engineering driven by a passion for developing customer-centric software solutions that address real-world problems.
+</p>
         </div>
     </section>
 

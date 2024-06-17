@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-    color: #8e3ba9;
+    color: #8f2361;
 }
 
 .content {
@@ -50,22 +50,32 @@ nav ul {
     padding: 0;
     margin-top: 22px;
     display: flex;
-    align-items: center; /* Ensure the items are aligned in the center horizontally */
+    align-items: center;
 }
 
 nav ul li {
     margin-left: 12px;
-    margin-right: 12px; /* Add margin between navigation items */
+    margin-right: 12px;
 }
 
 nav ul li:last-child {
-    margin-right: 30px; /* Remove margin from the last navigation item */
+    margin-right: 30px;
+}
+
+.introheading {
+	font-size: 40px;
+	color: #8f2361;
+	font-weight: bold;
+}
+
+.introparagraph {
+	font-size: 20px;
 }
 
 .photo {
     float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .services {
