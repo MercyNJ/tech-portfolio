@@ -18,7 +18,7 @@ a:hover {
 
 .content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto; /* Add space above content */
     padding: 20px;
 }
 
@@ -30,21 +30,37 @@ h2 {
     text-align: center;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    border-radius: 8px;
+    max-height: 50px;
+}
+
 nav {
     text-align: right;
 }
 
 nav ul {
     list-style-type: none;
-    margin-top: 10px;
     padding: 0;
+    margin-top: 22px;
+    display: flex;
+    align-items: center; /* Ensure the items are aligned in the center horizontally */
 }
 
 nav ul li {
-    display: inline-block;
     margin-left: 12px;
+    margin-right: 12px; /* Add margin between navigation items */
 }
 
+nav ul li:last-child {
+    margin-right: 30px; /* Remove margin from the last navigation item */
+}
 
 .photo {
     float: left;
