@@ -114,10 +114,45 @@ nav ul li:last-child {
     margin-bottom: 20px;
 }
 
-/
-.technical-skills, .soft-skills {
-    width: 45%;
-    display: inline-block;
-    vertical-align: top;
+/* Credentials Section */
+
+#credentials {
+    padding: 20px;
 }
 
+#credentials .skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+#credentials .technical-skills {
+    width: 45%;
+}
+
+#credentials .soft-skills {
+    width: 45%;
+}
+#credentials .technical-skills ul li,
+#credentials .soft-skills ul li {
+    margin-bottom: 10px;
+}
+
+#certifications .certifications ul li {
+	margin-bottom: 20px;
+}
+
+#services .services h3,
+#credentials .technical-skills h3,
+#credentials .soft-skills h3 {
+    color: #8f2361;
+}
+
+#certifications .certifications ul li .long-margin {
+    margin-left: 340px;
+    color: #b6b936;
+}
+
+#certifications .certifications ul li .short-margin {
+    margin-left: 100px;
+    color: #b6b936;
+}
