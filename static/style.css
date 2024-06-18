@@ -1,7 +1,7 @@
 body {
     background-color: #0c1121;
     color: #d0d3fc;
-    font-size: 18px;
+    font-size: 17.5px;
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.65;
 }
@@ -45,7 +45,6 @@ header {
 .logo img {
     border-radius: 8px;
     max-height: 50px;
-    filter: brightness(110%);
 }
 
 nav {
@@ -294,3 +293,13 @@ nav ul li a {
         margin-top: 10px;
     }
 }
+
+/* footer */
+
+footer .content p {
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
