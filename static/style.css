@@ -66,6 +66,10 @@ nav ul li:last-child {
     margin-right: 30px;
 }
 
+nav ul li a {
+    color: #17a589;
+}
+
 .introheading {
 	font-size: 40px;
 	color: #8f2361;
@@ -101,18 +105,14 @@ nav ul li:last-child {
     border-radius: 50%;
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 170px;
+    width: 160px;
 }
 
 #about .text {
     flex: 1;
 }
 
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
 
 /* Credentials Section */
 
@@ -156,3 +156,17 @@ nav ul li:last-child {
     margin-left: 100px;
     color: #b6b936;
 }
+#certifications .certifications ul li .margin {
+    margin-left: 15px;
+    color: #b6b936;
+}
+
+/* Services/Expertise Section */
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
