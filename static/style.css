@@ -197,3 +197,32 @@ nav ul li a {
     margin: 0;
     line-height: 1.6;
 }
+
+/* Projects Section */
+#portfolio {
+    text-align: center;
+}
+
+#portfolio .content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+#portfolio .work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#portfolio .project {
+    width: 45%;
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
