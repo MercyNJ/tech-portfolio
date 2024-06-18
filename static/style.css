@@ -254,3 +254,43 @@ nav ul li a {
     filter: brightness(130%);
 }
 
+/*Contact section */
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-links, .right-links {
+    width: 45%;
+}
+
+.left-links {
+    text-align: left;
+}
+
+.right-links {
+    text-align: right;
+}
+
+.left-links p,
+.right-links p {
+    margin: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-links, .right-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-links {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
