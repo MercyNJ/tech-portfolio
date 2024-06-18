@@ -3,6 +3,7 @@ body {
     color: #d0d3fc;
     font-size: 18px;
     font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.65;
 }
 
 a {
@@ -94,6 +95,7 @@ nav ul li a {
 #about .about-content {
     display: flex;
     align-items: center;
+    border-radius: 10px;
 }
 
 #about .photo {
@@ -111,6 +113,8 @@ nav ul li a {
 
 #about .text {
     flex: 1;
+    text-align: center;
+    line-height: 1.7;
 }
 
 
@@ -166,7 +170,30 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-left: 80px;
-    margin-top: 5px;
+    gap: 20px;
 }
 
+.services .service {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.services .service h3 {
+    color: #8f2361;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    margin: 0;
+    line-height: 1.6;
+}
+.services .service h3 {
+    color: #b6b936;
+    margin-bottom: 10px;
+}
+
+.services .service p {
+    margin: 0;
+    line-height: 1.6;
+}
