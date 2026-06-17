@@ -3,237 +3,553 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercy Njuguna - Portfolio</title>
+    <title>Mercy Njuguna — Full-Stack Engineer</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat|Open+Sans&display=swap">
+    <link rel="icon"
+      type="image/jpeg"
+      href="{{ url_for('static', filename='images/profilepic.jpg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-	<div class="logo">
-            <img src="{{ url_for('static', filename='images/techlogo.png') }}" alt="Logo">
-        </div>    
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#professional-experience">PROFESSIONAL EXPERIENCE</a></li>
-                <li><a href="#credentials">CREDENTIALS</a></li>
-                <li><a href="#services">EXPERTISE</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="content">
-		<h1 class="introheading">Hi, I'm Mercy Njuguna,</h1>
-		<h3>and I'm a Full-Stack Software Engineer.</h3>
-            <p class="introparagraph">With expertise in Python (Flask), JavaScript (React, Express, and Node.js), C#, Angular, PHP (Laravel), and the .NET Framework, I specialize in delivering robust, scalable solutions.</p>
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-name">Mercy Njuguna</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+            </ul>
+            <button class="burger" id="burger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Work</a>
+            <a href="#contact">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="hero-graphic">
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round">
+
+                    <circle cx="12" cy="12" r="3"></circle>
+
+                    <path d="M12 2v4"></path>
+                    <path d="M12 18v4"></path>
+
+                    <path d="M2 12h4"></path>
+                    <path d="M18 12h4"></path>
+
+                    <path d="M5 5l3 3"></path>
+                    <path d="M16 16l3 3"></path>
+
+                    <path d="M5 19l3-3"></path>
+                    <path d="M16 8l3-3"></path>
+
+                </svg>
+        </div>
+            <p class="hero-eyebrow">
+
+                <svg width="12" height="12" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    style="vertical-align:middle;">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M12 2v4"></path>
+                    <path d="M12 18v4"></path>
+                    <path d="M2 12h4"></path>
+                    <path d="M18 12h4"></path>
+                </svg>
+
+                Software Engineer
+
+                •
+
+                <svg width="12" height="12" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    style="vertical-align:middle;">
+                    <path d="M7 17L17 7"></path>
+                    <path d="M7 7h10v10"></path>
+                </svg>
+
+                API Integrations
+
+                •
+
+                <svg width="12" height="12" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    style="vertical-align:middle;">
+                    <path d="M6 19h12"></path>
+                    <path d="M8 15h8"></path>
+                    <path d="M10 11h4"></path>
+                </svg>
+
+                DevOps
+
+            </p>
+            <h1 class="hero-heading">
+                Building software that connects systems,<br>
+                <span class="hero-accent">people, and business goals.</span>
+            </h1>
+            <p class="hero-sub">I design and build web applications, backend services, API integrations, and deployment workflows that help organizations operate more efficiently and deliver better digital experiences.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn-primary">See My Work</a>
+                <a href="#contact" class="btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/mercy-njuguna/" target="_blank" rel="noopener noreferrer" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://github.com/MercyNJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+                <a href="https://medium.com/@mercinjuguna" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-    <section id="about">
-        <div class="content">
-            <h2>About Me</h2>
-	    <div class="about-content">
-              <div class="photo">
-                   <img src="{{ url_for('static', filename='images/profilepic.jpg') }}" alt="Logo">
-              </div>
-	      <div class="text">
-	            <p>I am a certified full-stack software engineer with over 2 years of professional experience developing robust web applications, delivering exceptional user experiences, and creating intuitive front-end designs.</p>
-                <p>I completed the ALX Africa 15-month Software Engineering Nano degree in March 2024, where intensive project-based training strengthened my technical skills and problem-solving abilities across the software development lifecycle.</p>
-	        <p>Additionally, I graduated with a Bachelors in Business and Information Technology from Jomo Kenyatta University of Agriculture & Technology in 2016. This program provided me with a diverse skill set encompassing business development, marketing, finance, and IT.
-</p>
-	        <p>With over 2 years of professional experience in business development within technology companies, I transitioned into software engineering driven by a passion for developing customer-centric software solutions that address real-world problems.
-</p>
-	      </div>
-	    </div>
-        </div>
-    </section>
-    
-    <section id="professional-experience">
-    <div class="content">
-        <h2>Professional Experience</h2>
-
-        <div class="technical-skills">
-            <h3>Software Engineer – SRE & DevOps</h3>
-            <p><strong>Identify Africa</strong> | Mar 2026 – May 2026</p>
-            <ul>
-                <li>Developed and enhanced backend services, APIs, and platform features to support product functionality and client requirements.</li>
-                
-                <li>Built and supported API integrations, system configurations, and environment-specific deployments across multiple client implementations.</li>
-                
-                <li>Created and maintained API documentation, technical guides, and integration resources to support implementation partners and developer onboarding.</li>
-                
-                <li>Performed API and integration testing using Postman, troubleshooting issues and providing technical support during client integrations.</li>
-                
-                <li>Designed and implemented end-to-end automated tests using Playwright, to ensure system reliability and quality.</li>
-                
-                <li>Delivered platform enhancements and client-specific customizations, translating business requirements into scalable technical solutions.</li>
-                
-                <li>Owned end-to-end technical delivery of enhancement and customization projects from requirements gathering through deployment.</li>
-                
-                <li>Served as the primary technical point of contact during client onboarding, integrations, implementations, and product demonstrations.</li>
-            </ul>
-            <p><strong>Softclans Technologies Ltd</strong> | Feb 2025 – Feb 2026</p>
-            <h3>Junior Software Engineer – Enterprise Systems Development</h3>
-            <h4>Software Engineer Intern</h4>
-            <p><strong>Softclans Technologies Ltd</strong> | Sep 2024 – Jan 2025</p>
-
-            <ul>
-                <li>Developed well-structured and efficient applications using C#, .NET Framework, AngularJS, and Microsoft SQL Server while following software engineering best practices.</li>
-
-                <li>Built and optimized responsive frontend components using Angular to enhance user experience and interface functionality.</li>
-
-                <li>Integrated data from multiple backend services, APIs, and databases to support seamless system functionality and data flow.</li>
-
-                <li>Designed and executed testing procedures to validate application functionality, security, performance, and system reliability.</li>
-
-                <li>Designed and implemented BPM workflows and automation scripts to optimize business processes and improve operational efficiency.</li>
-
-                <li>Developed and optimized SQL scripts to improve database performance, efficient data processing, and retrieval.</li>
-
-                <li>Contributed to requirements analysis, workflow design, user stories, and technical documentation to support evolving business and system needs.</li>
-
-                <li>Collaborated with business stakeholders and executive management to solve technical challenges and deliver scalable software solutions.</li>
-            </ul>
+    <!-- MARQUEE SKILLS TICKER -->
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <span>Python</span><span class="dot">·</span>
+            <span>Flask</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Node.js</span><span class="dot">·</span>
+            <span>C#</span><span class="dot">·</span>
+            <span>Angular</span><span class="dot">·</span>
+            <span>.NET Framework</span><span class="dot">·</span>
+            <span>PHP (Laravel)</span><span class="dot">·</span>
+            <span>PostgreSQL</span><span class="dot">·</span>
+            <span>MySQL</span><span class="dot">·</span>
+            <span>MongoDB</span><span class="dot">·</span>
+            <span>REST APIs</span><span class="dot">·</span>
+            <span>Playwright</span><span class="dot">·</span>
+            <span>CI/CD</span><span class="dot">·</span>
+            <span>SRE</span><span class="dot">·</span>
+            <span>Python</span><span class="dot">·</span>
+            <span>Flask</span><span class="dot">·</span>
+            <span>JavaScript</span><span class="dot">·</span>
+            <span>React</span><span class="dot">·</span>
+            <span>Node.js</span><span class="dot">·</span>
+            <span>C#</span><span class="dot">·</span>
+            <span>Angular</span><span class="dot">·</span>
+            <span>.NET Framework</span><span class="dot">·</span>
+            <span>PHP (Laravel)</span><span class="dot">·</span>
+            <span>PostgreSQL</span><span class="dot">·</span>
+            <span>MySQL</span><span class="dot">·</span>
+            <span>MongoDB</span><span class="dot">·</span>
+            <span>REST APIs</span><span class="dot">·</span>
+            <span>Playwright</span><span class="dot">·</span>
+            <span>CI/CD</span><span class="dot">·</span>
+            <span>SRE</span><span class="dot">·</span>
         </div>
     </div>
-</section>
 
-    <section id="credentials">
-        <div class="content">
-            <h2>Credentials</h2>
-            <div class="skills">
-                <div class="technical-skills">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Languages & Frameworks: Python (Flask), JavaScript (React, Express, Node.js), C#, Angular, PHP (Laravel), .NET Framework, C</li>
-                        <li>Web Technologies: HTML, CSS</li>
-                        <li>Databases: PostgreSQL, MySQL, MongoDB, Redis</li>
-                        <li>API Integrations</li>
-                        <li>Site Reliability Engineering (SRE)</li>
-                        <li>Systems Engineering Expertise</li>
-                        <li>CI/CD Pipelines & Deployment Automation</li>
-                    </ul>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo-col">
+                    <div class="about-photo-wrap">
+                        <img src="{{ url_for('static', filename='images/profilepic.png') }}" alt="Mercy Njuguna">
+                    </div>
                 </div>
-                <div class="soft-skills">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Teamwork</li>
-                        <li>Critical Thinking</li>
-                        <li>Adaptability</li>
-                        <li>Grit & Resilience</li>
-                        <li>Excellent Verbal and Written Communication</li>
-                        <li>A Love for Excellence</li>
-                    </ul>
+                <div class="about-text-col">
+                    <p class="section-eyebrow">About Me</p>
+                    <h2 class="section-heading">Building software that solves real business problems.</h2>
+                    <p>I am a Software Engineer with experience building web applications, backend services, API integrations, and enterprise systems. My work spans full-stack development, automated testing, client implementations, and production support.</p>
+                    <p>
+                        I have delivered solutions using Python, Flask, JavaScript, React, Node.js, C#, Angular, PHP, and SQL-based technologies. I enjoy translating business requirements into scalable technical solutions that improve operational efficiency and user experience.
+                    </p>
+                    <p>
+                        My background in both business and technology enables me to bridge the gap between technical implementation and business objectives, helping teams deliver software that creates measurable value.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">4</span>
+                            <span class="stat-label">Engineering Roles</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">Production</span>
+                            <span class="stat-label">Systems</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certifications">
-        <div class="content">
-            <h2>Education & Certifications</h2>
-            <div class="certifications">
-                <ul>
-                    <li>ALX Full-Stack Software Engineering: Back-end Specialization<span class="short-margin">March 2024</span></li>
-                    <li>ALX AiCE - AI Career Essentials<span class="long-margin">June 2024</span></li>
-		    <li>Bachelors in Business & Information Technology(BBIT)<span class="margin">First Class Honors</span><span class="margin">Sep 2016</span></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="content">
-            <h2>Expertise</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>UI/UX Design</h3>
-                    <p>I create user-friendly interfaces (UI) and smooth experiences (UX) that make digital products easy to use and engaging.</p>
-                </div>
-                <div class="service">
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section section-alt">
+        <div class="container">
+            <p class="section-eyebrow center">What I Do</p>
+            <h2 class="section-heading center">Areas of Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
                     <h3>Backend Engineering</h3>
-                    <p>I specialize in building strong backends using Python (Flask), JavaScript (Node.js), and frameworks such as Express. My focus is on creating scalable solutions that manage complex data efficiently.</p>
+                    <p>Building robust, scalable server-side systems using Python (Flask), Node.js, PHP (Laravel), C#, and .NET. From API design to database optimization.</p>
                 </div>
-                <div class="service">
-                    <h3>Systems Engineering</h3>
-                    <p>My expertise lies in designing and maintaining resilient & reliable infrastructures. I ensure applications run smoothly and securely across various environments.</p>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Crafting responsive, intuitive interfaces with React, Angular, and modern HTML/CSS that users actually enjoy navigating.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <h3>DevOps & Site Reliability Engineering</h3>
+                    <p>Designing reliable infrastructures, CI/CD pipelines, testing, and maintaining system uptime across environments.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                    </div>
+                    <h3>API Integrations</h3>
+                    <p>Building and connecting APIs across systems — from Postman testing to full integration documentation and client onboarding support.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="content">
-            <h2>Portfolio</h2>
-            <div class="work">
-                <div class="project">
-		     <img class="project-image" src="{{ url_for('static', filename='images/inlightofeternity.png') }}" alt="Inlightofeternity">
-                    <h3>Blog Web App</h3>
-                    <p><a href="http://inlightofeternity.co.ke">Find the blog here</a></p>
-                    <p>I developed this blogging application handling both the frontend and backend development.</p>
-		    <p><span class="highlight">Technology Stack:</span> React, Express, Node.js, MySQL</p>
-		    <p><span class="highlight">Functionalities:</span></p>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="container">
+            <p class="section-eyebrow">Career</p>
+            <h2 class="section-heading">Professional Experience</h2>
+            <div class="experience-header">
+                <div class="experience-nav">
+                    <button class="exp-arrow" id="expPrev">◀</button>
+                    <button class="exp-arrow" id="expNext">▶</button>
+                </div>
+            </div>
+
+            <div class="experience-scroll">
+
+                <!-- Identify Africa -->
+                <div class="experience-card reveal">
+                    <span class="experience-date">Feb 2026 – June 2026</span>
+
+                    <span class="experience-tag">SRE & DevOps</span>
+
+                    <h3>Software Engineer — SRE & DevOps</h3>
+
+                    <p class="experience-company">Identify Africa</p>
+
                     <ul>
-                        <li>User registration and sign-in</li>
-                        <li>Authors can create, edit, and delete blog posts.</li>
-                        <li>Logged-in users can write, edit, and delete comments</li>
-                        <li>Authors can manage all posts</li>
-                    </ul>
-		    <p><span class="highlight">Ongoing Improvements:</span></p>
-		    <ul>
-                        <li>Enhancements of existing features</li>
-                        <li>Addition of comprehensive automated tests</li>
-                        <li>Enhanced documentation</li>
-                        <li>Integration of filters, search options and subcategories</li>
-                    </ul>
-                    <p><a href="https://github.com/MercyNJ/blog-app">GitHub Repository: Blog App</a></p></br>
-                    
-                    <p><span style="color: #b6b936;">Disclaimer:</span> <br>
- Initially, I had completed this project using MongoDB,For the MongoDB version of the codebase, please visit <a href="https://github.com/MercyNJ/MERN-Blog" target="_blank" style="color: #b6b936;">this GitHub repository</a>.                </p>
+                        <li>Enhanced backend services, APIs, and platform features that enabled new product capabilities and supported evolving customer requirements.</li>
 
+                        <li>Designed and supported integrations with external platforms and third-party APIs, enabling secure and reliable data exchange across systems.</li>
+
+                        <li>Produced API documentation, implementation guides, and onboarding resources that improved integration readiness and reduced dependency on engineering support.</li>
+
+                        <li>Partnered directly with implementation teams and customers to troubleshoot integration challenges, accelerating onboarding and improving integration success rates.</li>
+
+                        <li>Validated platform integrations through Postman-based testing and issue analysis, helping identify and resolve defects before production deployment.</li>
+
+                        <li>Built automated unit, integration, and end-to-end test suites that strengthened release quality and increased confidence in platform changes.</li>
+
+                        <li>Delivered customer-specific enhancements and platform customizations that aligned technical solutions with business requirements.</li>
+
+                        <li>Served as the primary technical liaison during onboarding, implementation projects, demonstrations, and production support engagements.</li>
+                    </ul>
                 </div>
-		<div class="project">
-                  <h3>DentalEasePro</h3>
-                    <p><a href="http://dentmartenterprises.co.ke">Visit DentalEasePro</a></p>
-                    <p>This is a fully functional web application that automates the daily tasks of a dental supplier. I contributed to both the frontend and backend development, delivering an end-to-end solution that streamlines business operations and improves efficiency.</p>
-                    <p>Since the site contains personal data, login is required.
-		    <p><span class="highlight">Technology Stack:</span> Python (Flask), MySQL, HTML, CSS, JavaScript</p>
-		    <p><span class="highlight">Functionalities:</span></p>
-                        <ul>
-                            <li>Customer and Product Management: Allows the dental supplier to easily access, add, and remove clients and products, enhancing operational efficiency. The web app replaces traditional record-keeping methods with a modern, efficient solution for a smooth user experience.</li>
-                            <li>Invoice Creation: Enables the supplier to generate invoices by selecting a customer, specifying products and quantities, setting a due date, and recording payments. A warning is triggered if the selected quantity exceeds available stock, ensuring accuracy in both invoicing and inventory management.</li>
-                            <li>Generate Statements: Allows the supplier to review all pending invoices, filter by customer ID or name, and generate statements with ease by clicking the "Generate Statement" button.</li>
-                        </ul>
-                    <p>This application has significantly impacted the supplier's business.</p>
+
+                <!-- Softclans -->
+                <div class="experience-card reveal">
+                    <span class="experience-date">Sep 2024 – Feb 2026</span>
+
+                    <span class="experience-tag">Intern → Junior Engineer</span>
+
+                    <h3>Junior Software Engineer – Enterprise Systems Development</h3>
+
+                    <p class="experience-company">Softclans Technologies Ltd</p>
+
+                    <p class="timeline-progression">
+                        Software Engineer Intern (Sep 2024 – Jan 2025) → Junior Software Engineer (Feb 2025 – Feb 2026)
+                    </p>
+
+                    <ul>
+                        <li>Developed enterprise applications using C#, .NET Framework, AngularJS, and Microsoft SQL Server, delivering solutions that supported critical business operations and evolving organizational needs.</li>
+
+                        <li>Built and optimized responsive Angular interfaces that improved usability, enhanced user experience, and increased adoption across enterprise users.</li>
+
+                        <li>Designed and implemented BPM workflows and automation solutions that streamlined business processes, reduced manual effort, and improved process consistency.</li>
+
+                        <li>Developed and optimized SQL scripts that improved database performance, accelerated data processing, and enhanced reporting and information retrieval capabilities.</li>
+
+                        <li>Executed functional, security, and performance testing to identify issues early, improve system reliability, and support stable production releases.</li>
+
+                        <li>Contributed to requirements analysis, workflow design, user stories, technical documentation, and solution planning to ensure systems aligned with business objectives.</li>
+
+                        <li>Partnered with business stakeholders and executive leadership to address technical challenges and deliver scalable solutions that improved operational effectiveness.</li>
+                    </ul>
+                </div>
+
+                <!-- Thelathin -->
+                <div class="experience-card reveal">
+                    <span class="experience-date">Jul 2024 – Aug 2024</span>
+
+                    <span class="experience-tag">Backend Engineering</span>
+
+                    <h3>Back End Engineer Attachee</h3>
+
+                    <p class="experience-company">Thelathin Group Ltd</p>
+
+                    <ul>
+                        <li>Developed and maintained RESTful APIs using Node.js and Express, enabling reliable communication between application modules and supporting core platform functionality.</li>
+
+                        <li>Designed and implemented Sequelize models and database relationships that improved data integrity, simplified data management, and enhanced application performance.</li>
+
+                        <li>Collaborated with frontend developers to deliver seamless API integrations, ensuring efficient data exchange and a smoother user experience.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section section-alt">
+        <div class="container">
+            <p class="section-eyebrow center">Selected Work</p>
+            <h2 class="section-heading center">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-img-wrap project-img-placeholder">
+                        <div class="placeholder-inner">
+                            <svg width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                                <path d="M3 8h18"/>
+                                <path d="M8 12h8"/>
+                                <path d="M8 16h5"/>
+                            </svg>
+                        </div>
+                        <span class="project-tag">Full-Stack</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>In Light of Eternity</h3>
+                        <p>A full-featured blogging platform with user authentication, post management, commenting, and author controls — built end-to-end.</p>
+                        <div class="project-stack">
+                            <span>React</span><span>Express</span><span>Node.js</span><span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://inlightofeternity.co.ke" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+                            <a href="https://github.com/MercyNJ/blog-app" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-img-wrap project-img-placeholder">
+                        <div class="placeholder-inner">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                        </div>
+                        <span class="project-tag">Business App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>DentalEasePro</h3>
+                        <p>A business management platform for a dental supplier that digitizes inventory management, invoicing, customer records, and financial tracking. The application replaces manual workflows with a centralized system that improves operational efficiency, accuracy, and day-to-day operations.</p>
+                        <div class="project-stack">
+                            <span>Python</span><span>Flask</span><span>MySQL</span><span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://dentmartenterprises.co.ke" target="_blank" rel="noopener noreferrer">Visit Site →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section id="credentials" class="section">
+        <div class="container">
+            <p class="section-eyebrow center">Background</p>
+            <h2 class="section-heading center">Education & Certifications</h2>
+            <div class="creds-grid">
+                <div class="cred-card reveal">
+                    <div class="cred-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <div>
+                        <h3>ALX Full-Stack Software Engineering</h3>
+                        <p class="cred-sub">Back-end Specialization · March 2024</p>
+                    </div>
+                </div>
+                <div class="cred-card reveal">
+                    <div class="cred-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <div>
+                        <h3>ALX AiCE — AI Career Essentials</h3>
+                        <p class="cred-sub">June 2024</p>
+                    </div>
+                </div>
+                <div class="cred-card reveal">
+                    <div class="cred-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <div>
+                        <h3>BSc. Business & Information Technology</h3>
+                        <p class="cred-sub">JKUAT · First Class Honours · 2016</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="content">
-            <h2>Contact</h2>
-	    <div class="contact-links">
-	      <div class="left-links">
-                <p>mercinjuguna@gmail.com</p>
-                <p><a href="https://www.linkedin.com/in/">LinkedIn</a></p>
-	      </div>
-	      <div class="right-links">
-                <p><a href="https://github.com/MercyNJ">Github</a></p>
-                <p><a href="https://medium.com/@m">Medium</a></p>
-	      </div>
-	    </div>
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-inner">
+                <p class="section-eyebrow center">Get In Touch</p>
+                <h2 class="contact-heading">Let's build something great together.</h2>
+                <p class="contact-sub">Interested in collaborating, hiring, or just want to connect? I'd love to hear from you.</p>
+                <a href="mailto:mercinjuguna@gmail.com" class="btn-primary btn-large">Email Me</a>
+                <p class="contact-email">
+                    Or email me directly at
+                    <a href="mailto:mercinjuguna@gmail.com">
+                        mercinjuguna@gmail.com
+                    </a>
+                </p>
+                <div class="contact-socials">
+
+                    <a href="mailto:mercinjuguna@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <svg width="22" height="22" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16v16H4z"/>
+                            <path d="M4 7l8 6 8-6"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/mercy-njuguna/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://github.com/MercyNJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://medium.com/@mercinjuguna" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-        <div class="content">
-            <p>&copy; 2024 Mercy Njuguna</p>
-            <p>This Website is A Product Of My Own Design</p>
+        <div class="container footer-inner">
+            <span>© <span id="currentYear"></span> Mercy Njuguna</span>
+            <span>Designed & Built by Mercy Njuguna</span>
+        </div>
     </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            burger.classList.toggle('active');
+        });
+        mobileMenu.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                burger.classList.remove('active');
+            });
+        });
+
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(r => observer.observe(r));
+
+        document.getElementById('currentYear').textContent =
+            new Date().getFullYear();
+
+        const experienceScroll =
+    document.querySelector('.experience-scroll');
+
+        const expNext =
+            document.getElementById('expNext');
+
+        const expPrev =
+            document.getElementById('expPrev');
+
+        if (experienceScroll && expNext && expPrev) {
+
+            expNext.addEventListener('click', () => {
+                experienceScroll.scrollBy({
+                    left: 974,
+                    behavior: 'smooth'
+                });
+            });
+
+            expPrev.addEventListener('click', () => {
+                experienceScroll.scrollBy({
+                    left: -974,
+                    behavior: 'smooth'
+                });
+            });
+
+        }
+    </script>
+
 </body>
 </html>
